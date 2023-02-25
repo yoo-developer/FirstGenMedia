@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="logo"></div>
+        <div class="mobile_bg"></div>
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="sub-style.css"></head>
+        <div class="nav-bar">
+            <ul class="toggle-switch" onclick=move_node()>
+                <div class="node"></div>
+            </ul>
+            <ul class="active">
+                Home
+            </ul>
+            <ul>
+                <a href="services/index.html">Services</a>
+            </ul>
+            <ul>
+                <a href="about/index.html">About Us</a>
+            </ul>
+            <ul>
+                <a href="contact/index.html">Contact</a>
+            </ul>
+        </div>
+    <body>
+        <a href="www.google.com"><h1 class="loc_title">FirstGen Media<br><h2 class="hero-headline typography-hero-headline"> A Digital Marketing Company.</h2><</h1></a>
+    div class="changing_sub_title"><b>WE POWER
+        INSPIRATIONAL
+        BRANDS</b></div>
+<div class="side-part">
+    <h1 class="title-sub">What We Do :</h1>
+    <h3 id="launch">LAUNCH :<br>OUR TEAM CREATES UNFORGETTABLE BRAND AND PRODUCT LAUNCHES WITH A STRATEGIC MEDIA PLAN AND A POWERFUL CONCEPT.</h3>
+    <h3 id="grow">grow :<br>WITH OUR BRAND DEVELOPMENT SERVICES, WE WILL TAKE YOUR BRAND TO THE NEXT LEVEL.</h3>
+    <h3 id="expand" >expand :<br>WE TAKE YOUR BRAND TO THE WORLD.  WE UNLOCK YOUR INTERNATIONAL REVENUE POTENTIAL WITH A TAILOR-MADE ACTIONABLE PLAN.</h3></div>
+    	<style>
+*{
+transition:1s;
+}
+</style>
+	<section id="services">
+		<h2 class="title-sub">Our Services</h2>
+		<p>We offer a wide range of digital marketing services to help businesses achieve their goals.</p>
+		<div class="services-container">
+        
+			<div class="service">
+				<h4>SEO</h4>
+				<p>We optimize your website to rank higher in search engines.</p>
+			</div>
+			<div class="service">
+				<h4>PPC Advertising</h4>
+				<p>We create and manage effective PPC campaigns to drive traffic and sales.</p>
+			</div>
+			<div class="service">
+				<h4>Email Marketing</h4>
+				<p>We design and execute email campaigns to engage and convert your audience.</p>
+			</div>
+            <div class="service">
+				<h4>Social Media Marketing</h4>
+				<p>We provide social media marketing services to help you engage with your target audience.</p>
+			</div>
+            
+            <div class="service">
+				<h4>Content Marketing</h4>
+				<p>With our content marketing services, we engage your target audience.</p>
+			</div><div class="spacing"></div>
+            
+            <div class="section_2">
+                <h1 class="title-sub">
+                    Interested?
+                </h1>
+                <p style="color: var(--elements-bg);">
+                    We Are Happy To Hear That &nbsp :)
+                </p>
+                <div class="btn_container">
+                <div class="btn_1" onclick="redirect('./contact/index.html')"> Contact</div>
+                <div class="btn_2" onclick="redirect('./services/index.html')">see services</div>
+                </div>
+            </div>
+            <div class="btn" onclick="redirect('./services/index.html')">
+            View Services Description
+        </div class="btn">
+           
+      </div>
+		</div>
+</body>
+    <script> 
+    function redirect(fgm_location){
+        location.replace(fgm_location)
+    }  
+    var r = document.querySelector(':root');
+    let bool = true
+    function move_node(){
+        if (bool == false) {
+            r.style.setProperty('--switch-pos', '5vmin');
+            r.style.setProperty('--switch-bg', 'black');
+            r.style.setProperty('--switch-fg', 'white');
+            r.style.setProperty('--elements-fg', 'white');
+            r.style.setProperty('--elements-bg', 'black');
+            r.style.setProperty('--body-bg', 'black');
+            bool = true
+        }
+        else{
+            r.style.setProperty('--switch-pos', '0vmin');
+            r.style.setProperty('--switch-fg', 'black');
+            r.style.setProperty('--switch-bg', 'white');
+            r.style.setProperty('--elements-bg', 'white');
+            r.style.setProperty('--elements-fg', 'black');
+            r.style.setProperty('--body-bg', 'white');
+            bool = false
+        }
+    }
+    
+    
+    </script>
+    <script>
+        let num = 1
+
+        function reverse(){
+            let e1 = document.getElementById("launch")
+            let e2 = document.getElementById("grow")
+            let e3 = document.getElementById("expand")
+            if (num == 1){
+                e2.style.opacity = "0"
+                e3.style.opacity = "0"
+                e1.style.opacity = "1"
+            }
+            if (num == 2){
+                e2.style.opacity = "1"
+                e3.style.opacity = "0"
+                e1.style.opacity = "0"
+            }
+            if (num == 3){
+                e2.style.opacity = "0"
+                e3.style.opacity = "1"
+                e1.style.opacity = "0"
+            }
+            
+            num+=1
+            if (num > 3){
+                num = 1
+            }
+        }
+        setInterval(reverse,4000)
+
+        </script>
+    </body>     
+</html>
