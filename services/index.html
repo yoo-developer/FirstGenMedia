@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Deepa Kotwani | FirstGen Media</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../fonts.css">
+	<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+		:root{
+			--switch-pos : 5vmin ;
+			--switch-bg : rgb(0, 0, 0);
+			--switch-fg : #ffffff;
+			--body-bg : rgb(0, 0, 0);
+			--elements-fg :  rgb(255, 255, 255);
+    		--elements-bg :  rgb(0, 0, 0);
+		}
+		body {
+			background-color: var(--body-bg);
+			margin: 0;
+			padding: 0;
+			line-height: 1.5;
+			background-size: 3.5vmin 3.5vmin;
+			background-position: top left;
+			animation: mvbg 120s  ease-in-out infinite;
+		}
+		@keyframes mvbg{
+			50% {background-position: bottom right;}
+		}
+		.active{
+			background-color: #202020;
+			width: fit-content;
+			padding: 5px;
+			height: fit-content;
+		}
+		.nav {
+			position: fixed;
+			top: 0%;
+			width: 100%;
+			height: fit-content;
+			background-color: #121212;
+			display: flex;
+			padding: 8px;
+			font-weight: bold;
+		}
+		h1 {
+			font-size: 6vmin;
+			margin: 0;
+			color: var(--elements-fg);
+		}
+		h2{
+			background: radial-gradient(#ff057a, #ff00b3);
+			background-size: 50% 50%;
+			background-position: 050% 50%;
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			z-index: 3;
+			font-size: 4vmin;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		}
+		p {
+			color: var(--elements-bg);
+			font-weight: bold;
+			opacity: 0.8;
+			
+			
+		}
+		._intro p{
+			position:absolute;
+			left: 50%;
+			top:28%;
+			transform: translate(-50%);
+		}
+		._intro h2{
+			position:absolute;
+			left: 50%;
+			top:10%;
+			transform: translate(-50%);
+		}
+		
+		li {
+			padding: 25px;
+			margin: 10%;
+			color: var(--elements-fg);
+
+		}
+		ul{
+			color: white;
+			font-size: 2.5vmin;
+			padding-left: 3vmin;
+			padding-right: 3vmin;
+			width: fit-content;
+			height: min-content;
+			cursor: pointer;
+		}
+		.service_container{
+			min-width: 70vw;
+			max-width: 70vw;
+			height: 70vmin;
+			position: absolute;
+			
+			left: 50%;
+			margin-top: 20vmin;
+			bottom: 10%;
+			transform: translate(-50%);
+			background-color: var(--elements-fg);
+			display: flex;
+			overflow-x:scroll;
+
+  			scroll-snap-type: x mandatory;
+
+			
+		}
+		::-webkit-scrollbar {
+		width: 10px;
+		}
+		::-webkit-scrollbar-track {
+		background: #f1f1f1;
+		}
+		::-webkit-scrollbar-thumb {
+		background: #888;
+		}
+		::-webkit-scrollbar-thumb:hover {
+		background: #555;
+		}
+		._intro{
+			position: absolute;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: #ffffff;
+		}
+		._1{
+			position: absolute;
+			left: 100%;
+			width: 100%;
+			height: 100%;
+			background-color: #121212;
+			display: flex;
+			padding: 10vmin;
+			align-content: center;
+
+		}
+
+		._2{
+			position: absolute;
+			left: 200%;
+			width: 100%;
+			
+			height: 100%;
+			background-color: #121212;
+			
+		}
+		._3{
+			position: absolute;
+			left: 300%;
+			width: 100%;
+			
+			height: 100%;
+			background-color: #121212;
+			
+		}
+		._4{
+			position: absolute;
+			left: 400%;
+			
+			width: 100%;
+			height: 100%;
+			background-color: #121212;
+			
+		}
+		._5{
+			position: absolute;
+			left:500%;
+			width: 100%;
+			height: 100%;
+			background-color: #121212;
+			
+		}
+		._final{
+			position: absolute;
+			left:600%;
+			width: 100%;
+			height: 100%;
+			background-image: radial-gradient(#ffffff, #949494);;
+		}
+		._final p{
+			color: rgb(0, 0, 0);
+			padding-top:20vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._1 p{
+			color: rgb(255, 255, 255);
+			padding-top:30vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._1 h2{
+			padding-top: 10vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._2 p{
+			color: rgb(255, 255, 255);
+			padding-top:30vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._2 h2{
+			padding-top: 10vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._3 p{
+			color: rgb(255, 255, 255);
+			padding-top:30vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._3 h2{
+			padding-top: 10vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._4 p{
+			color: rgb(255, 255, 255);
+			padding-top:30vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._4 h2{
+			padding-top: 10vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._5 p{
+			color: rgb(255, 255, 255);
+			padding-top:30vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		._5 h2{
+			padding-top: 10vmin;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		section {
+  			scroll-snap-align:start;
+		}	
+		.contact{
+            transform: translate(-50%);
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            width: 20vmin;
+            padding: 10px;
+            color: black;
+            border: solid black;
+            background:transparent;
+			opacity: 0.8;
+            cursor: pointer;
+        }
+        .contact:hover{
+            width: 30vmin;
+        }
+		*{
+			transition: 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+			<ul >
+               <a href="../index.html">Home</a>
+            </ul>
+            <ul >
+                <a class="active" >Services</a>
+            </ul>
+            <ul >
+                <a href="../about/index.html">About Us</a>
+            </ul>
+			<ul>
+               <a href="../contact/index.html">Contact</a>
+            </ul></div>
+			
+	<div class="service_container">
+		<section class="_intro">
+			<h2>
+				Welcome to the service section
+			</h2>
+			<p>
+				move the slider below to see the content
+			</p>
+		</section>
+		<section class="_1">
+			<h2>Search Engine Optimization (SEO):</h2>
+		<p>Our SEO services are designed to help your website rank higher on search engine result pages (SERPs) and attract more traffic to your site. We use the latest SEO techniques and tools to optimize your website for search engines, including on-page optimization, content optimization, link building, and more.</p>
+		</section>
+		<section class="_2">
+			<h2>Pay-per-click (PPC) advertising:</h2>
+			<p>Our PPC advertising services can help you reach your target audience and generate more leads and sales. We create targeted campaigns on platforms like Google Ads, Bing Ads, and social media advertising to get your business in front of potential customers.</p>
+		</section>
+		<section class="_3">
+			<h2>Content Marketing:</h2>
+			<p>Our content marketing services can help you attract and engage your target audience with valuable and relevant content. We create high-quality content in various formats, including blog posts, articles, infographics, videos, and more, and use strategies like content promotion and distribution to reach a wider audience.
+			</p>
+		</section>
+		<section class="_4">
+			<h2>Social Media Marketing:</h2>
+			<p>Our social media marketing services are designed to help you build a strong social media presence and engage with your target audience. We create and manage social media accounts on platforms like Facebook, Instagram, Twitter, LinkedIn, and more, and use a variety of tactics to increase engagement and drive traffic to your website.</p>
+		</section>
+		<section class="_5">
+			<h2>Email Marketing:</h2>
+			<p>Our email marketing services can help you build and nurture relationships with your audience and promote your products or services. We create targeted email campaigns that are designed to convert subscribers into customers and drive sales.</p>
+		</section>
+		<section class="_final">
+			<p>Thank you for taking the time to learn more about Deepa Kotwani and FirstGen Media. If you're interested in learning more about our services and how we can help your business grow, please don't hesitate to get in touch.
+			</p>
+			<a href="../contact/index.html"><button class="contact">
+				Contact
+			</button></a>
+		</section>
+	</div>
+	
