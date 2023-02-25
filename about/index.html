@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Deepa Kotwani | FirstGen Media</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../fonts.css">
+	<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+		:root{
+			--switch-pos : 5vmin ;
+			--switch-bg : rgb(0, 0, 0);
+			--switch-fg : #ffffff;
+			--body-bg : rgb(0, 0, 0);
+			--elements-fg :  rgb(255, 255, 255);
+    		--elements-bg :  rgb(0, 0, 0);
+		}
+		::-webkit-scrollbar {
+		width: 10px;
+		}
+		::-webkit-scrollbar-track {
+		background: #f1f1f1;
+		}
+		::-webkit-scrollbar-thumb {
+		background: #888;
+		}
+		::-webkit-scrollbar-thumb:hover {
+		background: #555;
+		}
+		body {
+			background-color: var(--bg);
+			margin: 0;
+			padding: 0;
+			line-height: 1.5;
+			background-size: 3.5vmin 3.5vmin;
+			background-position: top left;
+			animation: mvbg 120s  ease-in-out infinite;
+		}
+		@keyframes mvbg{
+			50% {background-position: bottom right;}
+		}
+		.active{
+			background-color: #202020;
+			width: fit-content;
+			height: fit-content;
+		}
+		.nav {
+			position: fixed;
+			top: 0%;
+			width: 100%;
+			height: fit-content;
+			background-color: #121212;
+			display: flex;
+			padding: 8px;
+			font-weight: bold;
+		}
+		h1 {
+			font-size: 6vmin;
+			margin: 0;
+			color: var(--elements-fg);
+		}
+		h2{
+			background: radial-gradient(#ff057a, #ff00b3);
+			background-size: 50% 50%;
+			background-position: 050% 50%;
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			z-index: 3;
+			font-size: 4vmin;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		}
+
+		.toggle-switch{
+			position: absolute;
+			right: 2%;
+			margin-right: 30px;
+			width:8vmin;
+			height: 3vmin;
+			padding: 0.25vmin;
+			border-radius: 10vmin;
+			cursor: pointer;
+			background-color: var(--switch-bg);
+			transition: 0.3s;
+			z-index: 1000;
+		}
+		.node {
+			position: relative;
+			transition: 0.3s;
+			left: var(--switch-pos);
+			width: 2.5vmin;
+			height: 2.5vmin;
+			border-radius: 50%;
+			background-color: var(--switch-fg);
+		}
+		p {
+			margin: 0;
+			margin-top: 20px;
+			color: var(--elements-fg);
+		}
+		.container {
+			width: 100%;
+			margin: 0 auto;
+			padding: 25%;
+			padding-top: 20vmin;
+			padding-bottom: 10vmin;
+			background-color: var(--elements-bg);
+		}
+		li {
+			margin: 0 10px;
+		}
+		ul{
+			color: white;
+			font-size: 2.5vmin;
+			padding-left: 3vmin;
+			padding-right: 3vmin;
+			width: fit-content;
+			height: min-content;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<script> 
+    function redirect(fgm_location){
+        location.replace(fgm_location)
+    }  
+    var r = document.querySelector(':root');
+    let bool = true
+    function move_node(){
+        if (bool == false) {
+            r.style.setProperty('--switch-pos', '5vmin');
+            r.style.setProperty('--switch-bg', 'black');
+            r.style.setProperty('--switch-fg', 'white');
+            r.style.setProperty('--elements-fg', 'white');
+            r.style.setProperty('--elements-bg', 'black');
+            r.style.setProperty('--body-bg', 'black');
+            bool = true
+        }
+        else{
+            r.style.setProperty('--switch-pos', '0vmin');
+            r.style.setProperty('--switch-fg', 'black');
+            r.style.setProperty('--switch-bg', 'white');
+            r.style.setProperty('--elements-bg', 'white');
+            r.style.setProperty('--elements-fg', 'black');
+            r.style.setProperty('--body-bg', 'white');
+            bool = false
+        }
+    }
+</script>
+<body>
+	<div class="nav">
+		<ul class="toggle-switch" onclick=move_node()>
+			<div class="node"></div>
+			</ul>
+			<ul >
+               <a href="../index.html">Home</a>
+            </ul>
+            <ul >
+                <a href="../services/index.html">Services</a>
+            </ul>
+            <ul class="active">
+                About Us
+            </ul>
+			<ul>
+               <a href="../contact/index.html">Contact</a>
+            </ul>
+	</div>
+	<div class="container">
+		<h1>About Deepa Kotwani :</h1>
+		<h2>A Visionary Entrepreneur</h2>
+		<p>Deepa Kotwani is a visionary entrepreneur with a passion for digital marketing and a deep understanding of the industry. With years of experience in the field, Deepa has built a reputation as a thought leader and innovator in the world of digital marketing.</p>
+	<h2>A Journey to Success</h2>
+	<p>Deepa's journey to becoming a successful CEO and founder started with a deep interest in the power of technology and the internet. After completing a degree in BDS, Deepa started working in the field of digital marketing and quickly realized the potential for growth and innovation in the industry.</p>
+
+	<p>Deepa spent several years working for top digital marketing agencies, gaining experience and honing their skills in areas such as SEO, PPC, social media marketing, content marketing, and email marketing. However, Deepa also recognized the limitations of the traditional agency model and saw an opportunity to do things differently.</p>
+
+	<h2>A Passion for Innovation</h2>
+	<p>With a vision to create a digital marketing agency that put clients first and emphasized innovation and collaboration, Deepa founded FirstGen Media in 2009. Today, FirstGenMedia is a leading digital marketing agency that has helped numerous clients achieve their marketing goals and grow their online presence.</p>
+
+	<p>As CEO, Deepa is dedicated to staying on the cutting edge of the latest digital marketing trends and techniques. She is passionate about helping businesses of all sizes leverage the power of digital marketing to achieve their goals and reach their full potential.</p>
+
+	<h2>Exceptional Customer Service</h2>
+	<p>Under Deepa's leadership, FirstGen Media has become known for its exceptional customer service, innovative solutions, and results-driven approach. With a team of experienced digital marketers and a commitment to ongoing learning and improvement, FirstGen Media is poised to continue growing and helping businesses succeed in the ever-evolving world of digital marketing.</p>
+	<h2>Thank's</h2>
+<p>Under Deepa's leadership, FirstGen Media has become known for its exceptional customer service, innovative solutions, and results-driven approach. With a team of experienced digital marketers and a commitment to ongoing learning and improvement, FirstGen Media is poised to continue growing and helping businesses succeed in the ever-evolving world of digital marketing.</p>
+		<h1>About Website Designer :</h1>
+		<h2>Web Designer</h2>
+		<p>The site was constructed by <b>Houssem Chelihi</b>, a <b>front end web developer</b>.</p>
+		<h2>Contact</h2>
+		<p>you can contact or order a website using this Email address </address>: <b>houssemchelihi.000@gmail.com</b></p>
